@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Building Image') {
             steps {
-                sh "docker build -t suryarelangi/currecyservice:latest ."
+                sh "docker build -t suryarelangi/currencyservice:latest ."
             }
         }
         stage("Pushing image to DockerHub"){
